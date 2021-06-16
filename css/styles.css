@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+body{
+        top: 0px;
+        left: 0px;
+        margin: 0;
+        font-family: 'Nunito', sans-serif;;
+}
+#banner{
+    background-color: #293B5F;
+    color: #DBE6FD;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+}
+#social{
+    text-align: center;
+    margin-top: 3%;
+}
+#social h1{
+    font-size:2.4em;
+}
+#socialmediaicons{
+    display: inline-block;
+}
+.profile{
+    border: 4px solid #B2AB8C;
+    border-radius: 75%;
+    width: 28%;
+    margin-top: -112px;
+    position: absolute;
+    margin-left: -180px;
+}
+.profilesection{
+    text-align: center;
+    z-index: +2;
+}
