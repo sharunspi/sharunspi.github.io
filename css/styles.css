@@ -25,12 +25,26 @@ body{
 .profile{
     border: 4px solid #B2AB8C;
     border-radius: 75%;
-    width: 28%;
+    width: 21%;
     margin-top: -112px;
-    position: absolute;
-    margin-left: -180px;
+    margin-left: 12px;
 }
 .profilesection{
     text-align: center;
     z-index: +2;
+}
+.row{
+    display: flexbox;
+}
+.col-6{
+    width: 50%;
+    margin: 2px;
+}
+#projectsCard{
+    height: 250px;
+    border: 1px solid #B2AB8C;
+    background-color: #DBE6FD;
+    color: #293B5F;
+    display: block;
+    margin:10px 10px;
 }
