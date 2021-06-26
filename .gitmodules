@@ -1,0 +1,3 @@
+[submodule "Tick-Tack-Toe"]
+	path = Tick-Tack-Toe
+	url = https://github.com/sharunspi/Tick-Tack-Toe.git
