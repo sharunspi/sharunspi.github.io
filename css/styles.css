@@ -48,3 +48,10 @@ body{
     display: block;
     margin:10px 10px;
 }
+svg{
+    width: 8%;
+    margin-left: 40px;
+    fill: white;
+    cursor: pointer;
+}
+
