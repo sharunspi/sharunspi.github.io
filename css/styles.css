@@ -3,7 +3,7 @@ body{
         top: 0px;
         left: 0px;
         margin: 0;
-        font-family: 'Nunito', sans-serif;;
+        font-family: 'Nunito', sans-serif;
 }
 #banner{
     background-color: #293B5F;
@@ -34,7 +34,7 @@ body{
     z-index: +2;
 }
 .row{
-    display: flexbox;
+    display: flex;
 }
 .col-6{
     width: 50%;
@@ -46,7 +46,7 @@ body{
     background-color: #DBE6FD;
     color: #293B5F;
     display: block;
-    margin: 40px 10px 24px 10px;
+    margin: 40px 10px 24px 24px;
     border-radius: 4px;
     box-shadow: 0px 0px 2px 2px #293b5f5e;
 }
@@ -75,9 +75,50 @@ svg:hover{
 .card-heading{
     display: block;
 }
-.social-btns-area{
-    float: right;
+.social-btns-area li{
+    list-style-type: none;
 }
 .card-body{
     margin-top: 14px;
+    display: inline-block;
+}
+.card-svg{
+    width: 7%;
+    float: right;
+    display: block;
+    fill: #293B5F;
+}
+.card-svg:hover{
+    fill: #293b5f5e;
+}
+#contact{
+    height: 120px;
+    background-color: #DBE6FD;
+}
+#contact h4{
+    padding: 10px 40px 20px 40px;
+    font-size: 1.5em;
+    color:#293B5F ;
+}
+#contact li{
+    list-style-type:none;
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: crimson;
+}
+#contact svg{
+    fill: #293B5F;
+    width: 40px;
+    margin-top: 14px;
+}
+footer{
+    height: 100px;
+    background-color: #293B5F;
+    color:#DBE6FD ;
+    text-align: center;
+    overflow: hidden;
+}
+.footer-rights{
+    margin-top: 40px;
+    font-size: 1.2em;
 }
