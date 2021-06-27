@@ -41,12 +41,17 @@ body{
     margin: 2px;
 }
 #projectsCard{
-    height: 250px;
+    height: 200px;
     border: 1px solid #B2AB8C;
     background-color: #DBE6FD;
     color: #293B5F;
     display: block;
-    margin:10px 10px;
+    margin: 40px 10px 24px 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 2px #293b5f5e;
+}
+#projectsCard:hover{
+    box-shadow: 1px 1px 3px 3px #293b5f5e;
 }
 svg{
     width: 8%;
@@ -54,4 +59,25 @@ svg{
     fill: white;
     cursor: pointer;
 }
-
+svg:hover{
+    fill: #DBE6FD;
+}
+.card{
+    padding: 8px;
+}
+.card-main-heading{
+    color: #293B5F;
+    font-weight: 600;
+    font-size: 2em;
+    margin-left: 40px;
+    float: left;
+}
+.card-heading{
+    display: block;
+}
+.social-btns-area{
+    float: right;
+}
+.card-body{
+    margin-top: 14px;
+}
