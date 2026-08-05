@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharun K K | Software Engineer & Open Source Contributor</title>
+    <meta name="description" content="Personal portfolio of Sharun K K (sharunspi), featuring software engineering projects, contributions to Open Healthcare Network, an interactive English-to-IPA translator, and SOLID principles playbook.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Fira+Code:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark">
+    <!-- Grid Canvas Background -->
+    <div class="grid-canvas"></div>
+
+    <!-- Top Navigation Bar -->
+    <header class="editorial-header">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">SHARUN<span class="dot">.</span>SPI</a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#solid" class="nav-link">SOLID Playbook</a>
+                <a href="#terminal-trigger" class="nav-link" id="nav-term-btn">Terminal</a>
+                <a href="#contact" class="nav-link nav-cta">Inquire</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme" class="icon-btn">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="editorial-container">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="panel hero-panel">
+            <div class="hero-text-area">
+                <div class="tagline-badge">PERSONAL DOSSIER // VER 2.6.8</div>
+                <h1 class="hero-title">SHARUN K K</h1>
+                <div class="pronunciation-bar">
+                    <span class="phonetic">/ʃəˈruːn keɪ keɪ/</span>
+                    <button class="pronounce-btn" id="pronounce-name-btn" title="Listen to pronunciation">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+                </div>
+                <p class="hero-description">
+                    A software engineer dedicated to building deterministic systems, optimizing web workflows, and contributing to open-source healthcare infrastructure. Designing high-throughput, clean architectures guided by SOLID design principles.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-box">
+                        <span class="stat-val">300+</span>
+                        <span class="stat-lbl">Open Source Points</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-val">Python</span>
+                        <span class="stat-lbl">Core Engineering</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-val">JS / Node</span>
+                        <span class="stat-lbl">Full-Stack Web</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Phonetic Feature (Direct Showcase of English_to_IPA) -->
+            <div class="hero-interactive-area">
+                <div class="ipa-widget-container">
+                    <div class="widget-header">
+                        <span class="widget-title"><i class="fa-solid fa-language"></i> PROJECT IN-ACTION: ENGLISH TO IPA</span>
+                        <span class="widget-status">ONLINE</span>
+                    </div>
+                    <div class="widget-body">
+                        <p class="widget-desc">Type any English sentence or word to watch it convert into International Phonetic Alphabet (IPA) in real-time.</p>
+                        <div class="ipa-input-wrapper">
+                            <input type="text" id="ipa-input" placeholder="Type here (e.g. 'hello world', 'open source')" maxlength="100">
+                            <button id="ipa-clear-btn" class="clear-btn"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="ipa-output-area">
+                            <div class="output-label">IPA TRANSCRIPTION:</div>
+                            <div id="ipa-output" class="output-text">/həˈloʊ wɜrld/</div>
+                        </div>
+                        <div class="widget-footer">
+                            <span>Backend engine based on <a href="https://github.com/sharunspi/English_to_IPA" target="_blank" class="text-link">English_to_IPA</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile / About Section -->
+        <section id="about" class="panel grid-2-col">
+            <div class="profile-about-text">
+                <h2 class="section-title">THE ENGINEERING PHILOSOPHY</h2>
+                <div class="editorial-lead">
+                    Writing code that is simple, testable, and built to survive. Leveraging design patterns, not hype.
+                </div>
+                <div class="bio-paragraphs">
+                    <p>
+                        I'm a full-stack engineer and open-source enthusiast based in India. My journey in development is centered around building tools that solve fundamental bottlenecks, from linguistic computation to scalable backend platforms.
+                    </p>
+                    <p>
+                        A major part of my recent activity has been contributing to the <strong>Open Healthcare Network (OHC)</strong>, working on digital health infrastructures that support real-time patient telemetry and remote care protocols. I believe that open source is the ultimate venue for engineering collaboration and impact.
+                    </p>
+                    <p>
+                        When designing software, I strictly practice <strong>SOLID principles</strong>. I believe that clean, decoupled code prevents technical debt and scales with organizational needs. Scroll down to check my interactive code playbook showcasing these principles.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="profile-details-panel">
+                <div class="details-card">
+                    <h3 class="card-subtitle">CORE CAPABILITIES</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <span class="skill-name">Python & Django</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">JavaScript & Node.js</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">RESTful APIs & Microservices</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Docker & Containerization</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">System Design & SOLID Architecture</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="details-card activity-card">
+                    <h3 class="card-subtitle">COMMUNITY & OPEN SOURCE IMPACT</h3>
+                    <div class="activity-metric">
+                        <div class="metric-num">300+</div>
+                        <div class="metric-desc">Contributor Points earned on OHC Network platforms, helping build medical facilities and logging infrastructure.</div>
+                    </div>
+                    <div class="activity-log">
+                        <div class="log-entry">
+                            <span class="log-date">MAR 2026</span>
+                            <span class="log-txt">Optimized cache layers for telemetry queries in Open Healthcare Network core.</span>
+                        </div>
+                        <div class="log-entry">
+                            <span class="log-date">DEC 2025</span>
+                            <span class="log-txt">Contributed to Babel and loader pipelines resolving ES module imports.</span>
+                        </div>
+                        <div class="log-entry">
+                            <span class="log-date">AUG 2025</span>
+                            <span class="log-txt">Released first major version of `English_to_IPA` language parser.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="panel">
+            <div class="section-header-row">
+                <div>
+                    <span class="panel-section-num">01 / PROJECTS</span>
+                    <h2 class="section-title">FEATURED COMMITS & REPOSITORIES</h2>
+                </div>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">ALL</button>
+                    <button class="filter-btn" data-filter="oss">OPEN SOURCE</button>
+                    <button class="filter-btn" data-filter="tools">UTILITIES</button>
+                    <button class="filter-btn" data-filter="systems">WEB SYSTEMS</button>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: English to IPA -->
+                <div class="project-card" data-category="tools">
+                    <div class="project-meta">
+                        <span class="proj-tech">Python // Linguistics</span>
+                        <span class="proj-year">2025</span>
+                    </div>
+                    <h3 class="project-name">English_to_IPA</h3>
+                    <p class="project-desc">
+                        A robust parser and converter that takes standard English sentences and transcribes them into the International Phonetic Alphabet (IPA). Perfect for educational applications, text-to-speech pipelines, and linguistic research.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fa-solid fa-bolt"></i> Fast lookup dictionary</span>
+                        <span><i class="fa-solid fa-brain"></i> Phonetic rules fallback</span>
+                        <span><i class="fa-solid fa-code"></i> Developer API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sharunspi/English_to_IPA" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> Source</a>
+                        <button class="proj-link demo-trigger" data-widget="ipa"><i class="fa-solid fa-circle-play"></i> Run Widget</button>
+                    </div>
+                </div>
+
+                <!-- Project 2: OHC Care Platform -->
+                <div class="project-card" data-category="oss">
+                    <div class="project-meta">
+                        <span class="proj-tech">Django // PostgreSQL // React</span>
+                        <span class="proj-year">2026</span>
+                    </div>
+                    <h3 class="project-name">Open Healthcare Network (Care)</h3>
+                    <p class="project-desc">
+                        Active contributor to Care, a comprehensive patient management and hospital capacity tracking system built for public health institutions. Developed modules for telemedicine triage and patient health logs.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fa-solid fa-shield-halved"></i> HIPAA Compliant architecture</span>
+                        <span><i class="fa-solid fa-chart-line"></i> Real-time capacity mapping</span>
+                        <span><i class="fa-solid fa-server"></i> API Gateway optimization</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ohcnetwork/care" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> Repository</a>
+                        <a href="https://ohc.network" target="_blank" class="proj-link"><i class="fa-solid fa-globe"></i> Website</a>
+                    </div>
+                </div>
+
+                <!-- Project 3: SOLID Playground -->
+                <div class="project-card" data-category="systems">
+                    <div class="project-meta">
+                        <span class="proj-tech">Node.js // TypeScript</span>
+                        <span class="proj-year">2026</span>
+                    </div>
+                    <h3 class="project-name">Architectural Playbook</h3>
+                    <p class="project-desc">
+                        An interactive, client-side architectural demo showcasing clean code violations vs refactored implementations across all 5 SOLID design patterns. Formatted for developer code reviews.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fa-solid fa-toggle-on"></i> Live code toggle</span>
+                        <span><i class="fa-solid fa-feather"></i> Pattern descriptions</span>
+                        <span><i class="fa-solid fa-terminal"></i> Syntactical analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#solid" class="proj-link"><i class="fa-solid fa-arrow-down"></i> View Playbook</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLID Playbook Section -->
+        <section id="solid" class="panel">
+            <div class="section-header-row">
+                <div>
+                    <span class="panel-section-num">02 / INTERACTIVE DEMO</span>
+                    <h2 class="section-title">SOLID PRINCIPLES PLAYBOOK</h2>
+                </div>
+            </div>
+            
+            <p class="section-intro-text">
+                Explore real code refactoring. Toggle between implementations violating SOLID principles and their fully refactored, robust, and clean counterparts.
+            </p>
+
+            <div class="solid-playground-container">
+                <div class="solid-tabs">
+                    <button class="solid-tab-btn active" data-pattern="srp">
+                        <span class="tab-abbr">SRP</span>
+                        <span class="tab-full">Single Responsibility</span>
+                    </button>
+                    <button class="solid-tab-btn" data-pattern="ocp">
+                        <span class="tab-abbr">OCP</span>
+                        <span class="tab-full">Open/Closed</span>
+                    </button>
+                    <button class="solid-tab-btn" data-pattern="lsp">
+                        <span class="tab-abbr">LSP</span>
+                        <span class="tab-full">Liskov Substitution</span>
+                    </button>
+                    <button class="solid-tab-btn" data-pattern="isp">
+                        <span class="tab-abbr">ISP</span>
+                        <span class="tab-full">Interface Segregation</span>
+                    </button>
+                    <button class="solid-tab-btn" data-pattern="dip">
+                        <span class="tab-abbr">DIP</span>
+                        <span class="tab-full">Dependency Inversion</span>
+                    </button>
+                </div>
+
+                <div class="solid-content-area">
+                    <div class="pattern-header">
+                        <h3 id="pattern-name" class="pattern-title">Single Responsibility Principle (SRP)</h3>
+                        <p id="pattern-definition" class="pattern-def">A class should have one, and only one, reason to change. This means it should perform only one job or contain a single focus of logic.</p>
+                    </div>
+
+                    <div class="code-view-container">
+                        <div class="code-view-toggle">
+                            <button id="code-toggle-bad" class="toggle-choice active">VIOLATION (BAD CODE)</button>
+                            <button id="code-toggle-good" class="toggle-choice">REFACTORED (GOOD CODE)</button>
+                        </div>
+                        <div class="code-editor-header">
+                            <span class="editor-title"><i class="fa-solid fa-code"></i> user_service.py</span>
+                            <span class="editor-lang">Python</span>
+                        </div>
+                        <pre class="code-display"><code id="code-block" class="fira-code"># Single Responsibility Principle violation
+class UserReport:
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+        
+    def generate_report(self):
+        # Generates report data
+        return f"User Report: {self.name} ({self.email})"
+        
+    def save_to_database(self):
+        # Database logic (Violation: mixing data representation & DB persistence!)
+        print(f"Connecting to database... Saving user {self.name}")
+        
+    def print_raw_format(self):
+        # Output printing logic (Violation: mixing output rendering!)
+        print(f"=== REPORT ===\nName: {self.name}\nEmail: {self.email}\n==============")</code></pre>
+                    </div>
+
+                    <div class="pattern-analysis">
+                        <h4 class="analysis-title"><i class="fa-solid fa-list-check"></i> Rationale & Analysis</h4>
+                        <p id="pattern-rationale">
+                            The original class handles three separate concepts: holding user data, persisting to the database, and printing the report. If the database schema changes, or the print layout format changes, this class must be modified. In the refactored version, we extract the printing and database behaviors into their own dedicated classes, making the system modular and testable in isolation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="panel grid-2-col">
+            <div class="contact-info">
+                <span class="panel-section-num">03 / INQUIRY</span>
+                <h2 class="section-title">COMMISSION A BUILD</h2>
+                <p class="contact-lead">
+                    Have a systems problem that needs structuring, an open-source library requiring optimization, or an architectural design project? 
+                </p>
+                <p class="contact-desc">
+                    Let's collaborate. Drop a message using the card on the right, or get in touch through standard communication channels.
+                </p>
+                <div class="social-channels">
+                    <a href="https://github.com/sharunspi" target="_blank" class="social-link">
+                        <i class="fa-brands fa-github"></i>
+                        <span>github.com/sharunspi</span>
+                    </a>
+                    <a href="mailto:sharunspi@gmail.com" class="social-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>sharunspi@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>linkedin.com/in/sharunspi</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form-panel">
+                <form id="inquiry-form" class="editorial-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="client-name">Your Identifier (Name)</label>
+                            <input type="text" id="client-name" required placeholder="e.g. John Doe">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="client-email">Return Routing (Email)</label>
+                            <input type="email" id="client-email" required placeholder="e.g. name@server.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label>Inquiry Type</label>
+                            <div class="type-chips">
+                                <span class="chip active" data-value="oss">Open Source Work</span>
+                                <span class="chip" data-value="systems">Systems Design</span>
+                                <span class="chip" data-value="fulltime">Full-time Role</span>
+                                <span class="chip" data-value="hello">Just Saying Hello</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="client-message">Brief Spec Sheet (Message)</label>
+                            <textarea id="client-message" required rows="4" placeholder="Brief outline of your ideas or project spec..."></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-submit-btn">
+                        <span>TRANSMIT DISPATCH</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <div id="form-success-msg" class="form-toast success">
+                        <i class="fa-solid fa-circle-check"></i> Dispatch successfully signed and prepared! (Check console for mock transmission logs)
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="editorial-footer">
+        <div class="footer-container">
+            <span class="copy-text">© 2026 SHARUN K K. All rights reserved.</span>
+            <span class="designed-by">Built with pure HTML, CSS, and JS. </span>
+            <span class="commit-version">INDEX_REVISION_DRAFT_2026.08</span>
+        </div>
+    </footer>
+
+    <!-- Interactive Terminal Console Drawer -->
+    <div id="terminal-drawer" class="terminal-drawer">
+        <div class="terminal-header">
+            <div class="window-controls">
+                <span class="win-dot red" id="term-close-dot"></span>
+                <span class="win-dot yellow"></span>
+                <span class="win-dot green"></span>
+            </div>
+            <span class="terminal-title"><i class="fa-solid fa-terminal"></i> sharunspi@terminal: ~</span>
+            <span class="terminal-shortcut">ESC to toggle</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+            <div class="terminal-line system-msg">Welcome to Sharun's Interactive Shell (ver 1.4.2-static).</div>
+            <div class="terminal-line system-msg">Type <span class="cmd-highlight">help</span> to view available terminal commands.</div>
+            <div class="terminal-line system-msg">Type <span class="cmd-highlight">secret</span> for an easter egg.</div>
+            <div class="terminal-line system-msg">---</div>
+            <div id="terminal-output-container"></div>
+            <div class="terminal-input-row">
+                <span class="terminal-prompt">sharunspi@io:~$</span>
+                <input type="text" id="terminal-input" autofocus autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Audio element for pronunciation (synthesized via Web Speech API so we don't need external files) -->
+    <div id="speech-synthesizer" class="hidden"></div>
+
+    <!-- Script Entry -->
+    <script src="app.js"></script>
+</body>
+</html>
