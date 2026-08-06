@@ -662,45 +662,45 @@ function initTerminal() {
         switch (command) {
             case "help":
                 printLine("Available commands:", "system-msg");
-                printLine("  <span class='cmd-highlight'>about</span>       - Short dossier describing engineering focus");
-                printLine("  <span class='cmd-highlight'>projects</span>    - Lists active public repositories");
-                printLine("  <span class='cmd-highlight'>contact</span>     - Displays contact coordinates");
-                printLine("  <span class='cmd-highlight'>solid</span>       - Brief reminder summary of SOLID guidelines");
-                printLine("  <span class='cmd-highlight'>ipa [text]</span>   - Run phonetic engine on the input text parameter");
-                printLine("  <span class='cmd-highlight'>theme</span>       - Toggles dark vs light layout");
-                printLine("  <span class='cmd-highlight'>clear</span>       - Clears all terminal history");
-                printLine("  <span class='cmd-highlight'>secret</span>      - Execute custom payload");
+                printLine("  <span class='cmd-highlight'>about</span>       - Brief overview of my work & background");
+                printLine("  <span class='cmd-highlight'>projects</span>    - List featured projects & open-source repositories");
+                printLine("  <span class='cmd-highlight'>contact</span>     - Links to reach me directly");
+                printLine("  <span class='cmd-highlight'>solid</span>       - Quick cheat sheet for SOLID design principles");
+                printLine("  <span class='cmd-highlight'>ipa [text]</span>   - Run text through the English-to-IPA parser");
+                printLine("  <span class='cmd-highlight'>theme</span>       - Toggle between light paper and dark sketch mode");
+                printLine("  <span class='cmd-highlight'>clear</span>       - Clear console screen");
+                printLine("  <span class='cmd-highlight'>secret</span>      - Surprise message");
                 break;
             case "about":
-                printLine("<strong>SHARUN K K / sharunspi</strong>", "system-msg");
-                printLine("Systems engineer specializing in deterministic algorithms, language processing (compiler rules, lexical lookups), and open-source infrastructure scaling. Active contributor to Open Healthcare Network public telemetrics.", "system-msg");
+                printLine("<strong>Sharun K K (sharunspi)</strong>", "system-msg");
+                printLine("Software engineer focused on clean architecture, Python/JS development, and open-source contributions to digital health systems with Open Healthcare Network.", "system-msg");
                 break;
             case "projects":
-                printLine("PUBLIC DIRECTORY:", "system-msg");
-                printLine("1. <span class='cmd-highlight'>English_to_IPA</span> (Python) - English translation pipeline converting orthography to speech transcriptions.");
-                printLine("2. <span class='cmd-highlight'>Care (OHC Network)</span> (Django/Postgres) - Digital health care capacity tracking deployed across state hospitals.");
-                printLine("3. <span class='cmd-highlight'>SOLID Playbook</span> (Client JS) - Interactive pattern engine analyzing decoupling strategies.");
+                printLine("Featured Repositories:", "system-msg");
+                printLine("1. <span class='cmd-highlight'>English_to_IPA</span> (Python) - English phonetic transcription engine.");
+                printLine("2. <span class='cmd-highlight'>Care (OHC Network)</span> (Django/React) - Open-source health infrastructure.");
+                printLine("3. <span class='cmd-highlight'>SOLID Playbook</span> - Interactive refactoring guide.");
                 break;
             case "contact":
-                printLine("CONTACT ROUTING:", "system-msg");
+                printLine("Contact Links:", "system-msg");
                 printLine("  GitHub:   <a href='https://github.com/sharunspi' target='_blank'>github.com/sharunspi</a>");
                 printLine("  Email:    <a href='mailto:sharunspi@gmail.com'>sharunspi@gmail.com</a>");
                 printLine("  LinkedIn: <a href='https://linkedin.com' target='_blank'>linkedin.com/in/sharunspi</a>");
                 break;
             case "solid":
-                printLine("SOLID DESIGN ARCHITECTURE CHEAT SHEET:", "system-msg");
-                printLine("  <strong>S</strong>RP: Single Responsibility - One class has one logic theme.");
-                printLine("  <strong>O</strong>CP: Open/Closed - Closed to revision, open to inheritance/strategies.");
-                printLine("  <strong>L</strong>SP: Liskov Substitution - Subclasses must fully honor base type assertions.");
-                printLine("  <strong>I</strong>SP: Interface Segregation - Fat interfaces split into granular adapters.");
-                printLine("  <strong>D</strong>IP: Dependency Inversion - Depend on abstractions, inject details.");
+                printLine("SOLID Principles Quick Summary:", "system-msg");
+                printLine("  <strong>S</strong>RP: Single Responsibility - One reason to change.");
+                printLine("  <strong>O</strong>CP: Open/Closed - Open for extension, closed for modification.");
+                printLine("  <strong>L</strong>SP: Liskov Substitution - Subtypes must be substitutable.");
+                printLine("  <strong>I</strong>SP: Interface Segregation - Prefer smaller, specific interfaces.");
+                printLine("  <strong>D</strong>IP: Dependency Inversion - Depend on abstractions, not concretions.");
                 break;
             case "ipa":
                 if (!arg) {
-                    printLine("Syntax Error: <span class='cmd-highlight'>ipa [English text to translate]</span>", "system-msg");
+                    printLine("Usage: <span class='cmd-highlight'>ipa [text]</span> (e.g. ipa hello world)", "system-msg");
                 } else {
                     const res = translateSentenceToIpa(arg);
-                    printLine(`Phonetic Transcription: <span class='cmd-highlight'>${res}</span>`, "system-msg");
+                    printLine(`IPA Transcription: <span class='cmd-highlight'>${res}</span>`, "system-msg");
                 }
                 break;
             case "theme":
@@ -710,7 +710,7 @@ function initTerminal() {
                 termOutput.innerHTML = "";
                 break;
             case "secret":
-                printLine("Triggering Payload: ASCII Glyphs...", "system-msg");
+                printLine("Hello! Thanks for visiting my personal site.", "system-msg");
                 printLine("<pre style='color: var(--accent-color); font-size: 0.7rem; line-height: 1.1;'>\n" +
                           "   _____ _    _          _____  _    _ _   _ \n" +
                           "  / ____| |  | |   /\\   |  __ \\| |  | | \\ | |\n" +
@@ -720,7 +720,7 @@ function initTerminal() {
                           " |_____/|_|  |_/_/    \\_\\_|  \\_\\\\____/|_| \\_|\n" +
                           "                                             \n" +
                           "</pre>");
-                printLine("Keep checking constraints. Keep decoupling code. Keep making healthcare open.", "system-msg");
+                printLine("Writing clean code, one line at a time.", "system-msg");
                 break;
             default:
                 printLine(`Command not found: <span class='cmd-highlight'>${command}</span>. Type <span class='cmd-highlight'>help</span> for commands.`, "system-msg");
@@ -744,10 +744,9 @@ function initTerminal() {
         // Show mock submit toast
         toast.style.display = "flex";
         
-        // Log transaction to terminal
-        printLine(`[INCOMING INQUIRY] Route signed: from=${name} email=${email} type=${type}`, "system-msg");
-        printLine(`[DISPATCH] payload="${msg.substring(0, 40)}..."`, "system-msg");
-        printLine(`[DISPATCH STATUS] Prepared for standard mail transport client. Mock transmitted.`, "system-msg");
+        // Log message info
+        printLine(`[Message Received] From: ${name} (${email}) | Topic: ${type}`, "system-msg");
+        printLine(`[Content] "${msg.substring(0, 50)}..."`, "system-msg");
         
         // Auto-show terminal to let user see logs
         if (!terminalOpen) {
