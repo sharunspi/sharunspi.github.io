@@ -677,9 +677,12 @@ function initTerminal() {
                 break;
             case "projects":
                 printLine("Featured Repositories:", "system-msg");
-                printLine("1. <span class='cmd-highlight'>English_to_IPA</span> (Python) - English phonetic transcription engine.");
-                printLine("2. <span class='cmd-highlight'>Care (OHC Network)</span> (Django/React) - Open-source health infrastructure.");
-                printLine("3. <span class='cmd-highlight'>SOLID Playbook</span> - Interactive refactoring guide.");
+                printLine("1. <span class='cmd-highlight'>Parachute</span> (React/TypeScript/WebRTC) - Instant PC to Mobile P2P file sharing via QR code.");
+                printLine("2. <span class='cmd-highlight'>IsItVibeCoded</span> (TypeScript/AI) - Automated AI codebase pattern & vibe analyzer.");
+                printLine("3. <span class='cmd-highlight'>Claude Slack Integration</span> (Node.js/Slack) - Anthropic Claude AI Slack bot.");
+                printLine("4. <span class='cmd-highlight'>English_to_IPA</span> (Python) - English phonetic transcription engine.");
+                printLine("5. <span class='cmd-highlight'>Care (OHC Network)</span> (Django/React) - Open-source health infrastructure.");
+                printLine("6. <span class='cmd-highlight'>SOLID Playbook</span> - Interactive refactoring guide.");
                 break;
             case "contact":
                 printLine("Contact Links:", "system-msg");
